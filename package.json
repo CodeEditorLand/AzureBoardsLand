@@ -1,10 +1,33 @@
 {
 	"name": "@codeeditorland/boards",
 	"displayName": "Azure Boards",
+	"version": "0.0.1",
+	"private": false,
 	"description": "",
+	"keywords": [
+		"codeeditorland",
+		"land",
+		"playform"
+	],
+	"homepage": "HTTPS://GitHub.Com/CodeEditorLand/AzureBoardsLand#readme",
+	"bugs": {
+		"url": "HTTPS://GitHub.Com/CodeEditorLand/AzureBoardsLand/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+HTTPS://github.com/CodeEditorLand/AzureBoardsLand.git"
+	},
+	"license": "SEE LICENSE IN LICENSE",
+	"author": {
+		"name": "Source 🖋️ Open 👐🏻",
+		"email": "Source/Open@Editor.Land",
+		"url": "HTTPS://Editor.Land"
+	},
+	"type": "module",
 	"main": "./build/extension/extension",
 	"scripts": {
-		"compile": "tsc -p ./"
+		"compile": "tsc -p ./",
+		"prepublishOnly": "Build 'Source/**/*.ts'"
 	},
 	"contributes": {
 		"commands": [
@@ -126,10 +149,14 @@
 		"vsts-device-flow-auth": "1.136.0"
 	},
 	"devDependencies": {
+		"@playform/build": "0.2.1",
 		"@types/keytar": "4.4.2",
 		"@types/node": "22.13.14"
 	},
 	"extensionDependencies": [
 		"vscode.git"
-	]
+	],
+	"publishConfig": {
+		"access": "public"
+	}
 }
