@@ -151,7 +151,7 @@
 	"devDependencies": {
 		"@playform/build": "0.2.3",
 		"@types/keytar": "4.4.2",
-		"@types/node": "22.14.0"
+		"@types/node": "22.14.1"
 	},
 	"extensionDependencies": [
 		"vscode.git"
